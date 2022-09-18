@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100vw;
+}
+
+/*All images */
+img{
+    width: 20rem;
+}
+
+.head{
+    width: 50%;
+    margin: 0 auto;
+    gap: 2rem;
+    border: 0px solid red;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.nav{
+    display: flex;
+     justify-content: flex-end;
+     border: 0px solid;
+     width: 100%;
+     gap: 0.5rem;
+     
+}
+
+.nav > ul{
+    display: flex;
+    align-items: center;
+    border: 0px solid #f0f;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+ul > li{
+    list-style: none;
+}
+
+ul > li > a{
+    text-decoration: none;
+}
+
+.center{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    border: 0px solid blue;
+    justify-content: center;
+    gap: 1rem;
+    /* height: 60vh; */
+}
+
+figure{
+    margin: 1rem;
+}
+
+form{
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.form__control{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+input[type="text"]{
+        /* width: 100%; */
+        padding: 0.3rem 0.7rem;
+        border-radius: 0.3rem;
+        outline: none;
+    }
+
+    button{
+        width: 50%;
+        background-color: red;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 0.5rem 0.8rem;
+        font-size: 18px;
+    }
+
+    button:hover{
+        width: 50%;
+        background-color: #fff;
+        color: #f00;
+        border: 1px solid;
+       
+    }
+
+
+
+@media screen and (max-width: 768px) {
+    .center{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .head nav > ul{
+        display: block;
+        background-color: teal;
+        
+       
+    }
+    ul > li{
+        margin: 0.8rem;
+    }
+
+    .nav ul > li > a{
+         color: #fff;
+         padding: 0.5rem;
+    }
+    
+
+    .form__control{
+        display: flex;
+        flex-direction: column;
+        margin: 0.8rem;
+    }
+
+    input[type="text"]{
+        /* width: 100%; */
+        padding: 0.3rem 0.7rem;
+        border-radius: 0.3rem;
+        outline: none;
+    }
+
+    .form{
+        display: flex;
+        justify-content: center;
+    }
+    
+    button{
+        width: 100%;
+        border: none;
+        background-color: red;
+        color: #fff;
+        padding: 0.3rem 0.8rem;
+        font-size: 1.5rem;
+        border-radius: 0.3rem;
+    }
+    
+}
